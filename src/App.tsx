@@ -10,24 +10,7 @@ export type TaskType = {
 
 const App = () => {
   const location = useLocation();
-  const [tasks, setTasks] = useState<TaskType[]>([
-    {
-      name: "A2SV Web Task",
-      description:
-        "Building a To-do List App for the A2SV Web Track Task 4 using React, TypeScript and CSS.",
-      status: "inProgress",
-    },
-    {
-      name: "A2SV Problem Solving",
-      description: "Solving a problem on A2SV Hub to not lose the streak!",
-      status: "finished",
-    },
-    {
-      name: "Physics Session",
-      description: "Watching the lectures and solving H.W.",
-      status: "notStarted",
-    },
-  ]);
+  const [tasks, setTasks] = useState<TaskType[]>([]);
 
   const inputRef = useRef<HTMLInputElement>(null);
 
